@@ -7,6 +7,7 @@ const TaskList = ({ tasks, filter, editTask, deleteTask, toggleCompletion }) => 
     if (filter === 'Incomplete') return !task.completed;
     return true;
   });
+  
 
   return (
     <ul className="task-list">
